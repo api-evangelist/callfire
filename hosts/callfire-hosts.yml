@@ -1,0 +1,112 @@
+generated: '2026-10-06'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 4
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - legal
+  - portal
+  - status
+  - website
+hosts:
+- host: api.callfire.com
+  found_by:
+  - apis[]
+  - contract-discovery
+  types: []
+  serves:
+  - api
+  registrable_domain: callfire.com
+  role: api
+  relation: own
+- host: api.eztexting.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: eztexting.com
+  role: api
+  relation: other-domain
+- host: developers.callfire.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  - Documentation
+  - APIReference
+  - GettingStarted
+  serves:
+  - docs
+  registrable_domain: callfire.com
+  role: portal
+  relation: own
+- host: developers.eztexting.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  title: Getting Started
+  status: 200
+  registrable_domain: eztexting.com
+  role: portal
+  relation: other-domain
+- host: status.callfire.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: callfire.com
+  role: status
+  relation: own
+- host: www.callfire.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - spec-found
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Support
+  - Blog
+  - Pricing
+  - SignUp
+  - Compliance
+  serves:
+  - docs
+  - spec
+  registrable_domain: callfire.com
+  role: website
+  relation: own
+- host: www.eztexting.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: eztexting.com
+  role: legal
+  relation: other-domain

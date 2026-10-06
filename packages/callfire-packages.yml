@@ -1,0 +1,86 @@
+generated: '2026-10-06'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/CallFire
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (callfire.com,
+  eztexting.com, security/callfire-domain-security.yml) or its accepted GitHub org (CallFire).'
+packages:
+- name: callfire
+  registry: npm
+  url: https://www.npmjs.com/package/callfire
+  language: JavaScript
+  official: true
+  version: 0.2.0
+  published: '2015-06-11'
+  evidence: metadata names callfire.com
+- name: callfire-api-client-csharp
+  registry: github
+  url: https://github.com/CallFire/callfire-api-client-csharp
+  language: C#
+  official: true
+  version: null
+  published: '2022-12-08'
+  source_repo: https://github.com/CallFire/callfire-api-client-csharp
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: vpc-network-tester
+  registry: github
+  url: https://github.com/CallFire/vpc-network-tester
+  language: Python
+  official: true
+  version: null
+  published: '2021-03-06'
+  source_repo: https://github.com/CallFire/vpc-network-tester
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: callfire-api-samples
+  registry: github
+  url: https://github.com/CallFire/callfire-api-samples
+  language: Java
+  official: true
+  version: null
+  published: '2020-04-24'
+  source_repo: https://github.com/CallFire/callfire-api-samples
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: callfire-api-client-python
+  registry: github
+  url: https://github.com/CallFire/callfire-api-client-python
+  language: Python
+  official: true
+  version: null
+  published: '2020-01-17'
+  source_repo: https://github.com/CallFire/callfire-api-client-python
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: callfire-api-client-java
+  registry: github
+  url: https://github.com/CallFire/callfire-api-client-java
+  language: Java
+  official: true
+  version: null
+  published: '2019-12-30'
+  source_repo: https://github.com/CallFire/callfire-api-client-java
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: CallFire-PHP-SDK
+  registry: github
+  url: https://github.com/CallFire/CallFire-PHP-SDK
+  language: PHP
+  official: true
+  version: null
+  published: '2017-06-27'
+  source_repo: https://github.com/CallFire/CallFire-PHP-SDK
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: callfire-api-client-js
+  registry: github
+  url: https://github.com/CallFire/callfire-api-client-js
+  language: JavaScript
+  official: true
+  version: null
+  published: '2017-03-06'
+  source_repo: https://github.com/CallFire/callfire-api-client-js
+  evidence: repository in github.com/CallFire, whose profile names the provider's domain
+- name: callfire
+  registry: nuget
+  url: https://www.nuget.org/packages/callfire
+  language: C#
+  official: false
+  version: 1.0.5
+  published: null
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'

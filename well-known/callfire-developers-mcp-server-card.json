@@ -1,0 +1,1 @@
+{"$schema":"https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json","name":"com.readme/eztexting","version":"1.0","title":"EZ Texting API Docs","description":"MCP server for EZ Texting API Docs. Lets AI agents explore this project's API reference and documentation.","remotes":[{"type":"streamable-http","url":"https://developers.eztexting.com/mcp"}]}

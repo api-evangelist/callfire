@@ -1,23 +1,112 @@
 aid: callfire
+
 name: Callfire
-description: 'Callfire is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.callfire.com/sites/default/files/OpenGraph/callfire-social-post.png
+
+description: Callfire provides cloud-based communication solutions that enable businesses to engage customers via voice calls, text messaging,
+  and IVR. Their platform offers tools for call tracking, voice broadcasting, and automated messaging, helping companies improve outreach, increase
+  revenue, and streamline customer interactions. With over 4 billion messages delivered, Callfire serves a wide range of industries and integrates
+  with popular CRMs and marketing platforms.
+
 url: https://raw.githubusercontent.com/api-evangelist/callfire/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
+
 x-tier: stub
+
 x-tier-reason: harvest
+
 specificationVersion: '0.20'
+
 created: '2026-10-06'
+
 modified: '2026-10-06'
+
 tags:
 - Company
-apis: []
+- Communications
+- Cloud
+- Messaging
+- Voice
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/callfire-plans-pricing.yml
+- type: Webhooks
+  url: asyncapi/callfire-webhooks.yml
+- type: Conformance
+  url: conformance/callfire-conformance.yml
+- type: SecurityTxt
+  url: well-known/callfire-status-security.txt
+- type: WellKnown
+  url: well-known/callfire-well-known.yml
+- type: Hosts
+  url: hosts/callfire-hosts.yml
+- type: Vendors
+  url: vendors/callfire-vendors.yml
+- type: SDKs
+  url: packages/callfire-packages.yml
+- type: Packages
+  url: packages/callfire-packages.yml
+- type: StatusPage
+  url: http://status.callfire.com
+- type: Newsroom
+  url: https://www.callfire.com/press
+- type: GitHubOrganization
+  url: https://github.com/CallFire
+- type: DomainSecurity
+  url: security/callfire-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/callfire
+  url: https://www.callfire.com
+- type: DeveloperPortal
+  url: https://developers.callfire.com
+- type: Documentation
+  url: https://developers.callfire.com/docs.html
+- type: APIReference
+  url: https://developers.callfire.com/docs.html
+- type: GettingStarted
+  url: https://developers.callfire.com/learn.html
+- type: Support
+  url: https://www.callfire.com/help/docs/faq
+- type: Blog
+  url: https://www.callfire.com/blog
+- type: Pricing
+  url: https://www.callfire.com/pricing
+- type: SignUp
+  url: https://www.callfire.com/ui/register
+- type: TermsOfService
+  url: https://www.eztexting.com/terms
+- type: PrivacyPolicy
+  url: https://www.eztexting.com/privacy-policy
+- type: Compliance
+  url: https://www.callfire.com/legal/compliance
+
+apis:
+- name: CallFire API
+  description: CallFire API provides voice calls, SMS, and related communication services.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  properties:
+  aid: callfire:callfire-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-06'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.callfire.com
+    status: 200
+  - url: https://equityzen.com/company/callfire
+    status: 403
