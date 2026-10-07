@@ -44,6 +44,7 @@ reliance:
     cannot tell those apart
 checked:
 - 'docs-platform: swagger-ui'
+- status.callfire.com (StatusPage)
 - www.callfire.com (Website)
 - developers.callfire.com (DeveloperPortal)
 - developers.callfire.com (Documentation)

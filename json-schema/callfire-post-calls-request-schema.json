@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/callfire/main/json-schema/callfire-post-calls-request-schema.json",
+  "title": "PostCallsRequest",
+  "x-generated": "2026-10-06",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/callfire-openapi-generated.yml#/components/schemas/PostCallsRequest",
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "object",
+      "description": "Map of user-defined string attributes associated with recipient."
+    },
+    "contactId": {
+      "type": "integer",
+      "description": "An id of existing contact used as recipient."
+    },
+    "dialplanXml": {
+      "type": "string",
+      "description": "An IVR xml document describing dialplan."
+    },
+    "fromNumber": {
+      "type": "string",
+      "description": "~"
+    },
+    "liveMessage": {
+      "type": "string",
+      "description": "Text to be turned into a sound, this will be played when the phone is answered."
+    },
+    "liveMessageSoundId": {
+      "type": "integer",
+      "description": "An id of a sound file to play if phone is answered."
+    },
+    "machineMessage": {
+      "type": "string",
+      "description": "Text to be turned into a sound, this will be played when answering machine is detected."
+    },
+    "machineMessageSoundId": {
+      "type": "integer",
+      "description": "An id of a sound file to play if answering machine is detected."
+    },
+    "phoneNumber": {
+      "type": "string",
+      "description": "Recipient's phone number in E.164 format."
+    },
+    "transferDigit": {
+      "type": "string",
+      "description": "A digit pressed to initiate the transfer."
+    },
+    "transferMessage": {
+      "type": "string",
+      "description": "Text to be turned into a sound, this will be played when the transfer digit is pressed."
+    },
+    "transferMessageSoundId": {
+      "type": "integer",
+      "description": "An id of a sound file to play if call is transferred."
+    },
+    "transferNumber": {
+      "type": "string",
+      "description": "Phone number to transfer the call to."
+    },
+    "voice": {
+      "type": "string",
+      "description": "The voice to be used."
+    }
+  }
+}

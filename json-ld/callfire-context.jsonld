@@ -1,0 +1,150 @@
+{
+  "@context": {
+    "@vocab": "https://callfire.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "callfire": "https://callfire.com/schema#",
+    "GetCallsResponse": "callfire:GetCallsResponse",
+    "items": {
+      "@id": "callfire:items",
+      "@container": "@list"
+    },
+    "limit": {
+      "@id": "callfire:limit",
+      "@type": "xsd:integer"
+    },
+    "offset": {
+      "@id": "callfire:offset",
+      "@type": "xsd:integer"
+    },
+    "totalCount": {
+      "@id": "callfire:totalCount",
+      "@type": "xsd:integer"
+    },
+    "PostCallsRequest": "callfire:PostCallsRequest",
+    "attributes": {
+      "@id": "callfire:attributes"
+    },
+    "contactId": {
+      "@id": "callfire:contactId",
+      "@type": "xsd:integer"
+    },
+    "dialplanXml": {
+      "@id": "callfire:dialplanXml",
+      "@type": "xsd:string"
+    },
+    "fromNumber": {
+      "@id": "callfire:fromNumber",
+      "@type": "xsd:string"
+    },
+    "liveMessage": {
+      "@id": "callfire:liveMessage",
+      "@type": "xsd:string"
+    },
+    "liveMessageSoundId": {
+      "@id": "callfire:liveMessageSoundId",
+      "@type": "xsd:integer"
+    },
+    "machineMessage": {
+      "@id": "callfire:machineMessage",
+      "@type": "xsd:string"
+    },
+    "machineMessageSoundId": {
+      "@id": "callfire:machineMessageSoundId",
+      "@type": "xsd:integer"
+    },
+    "phoneNumber": {
+      "@id": "callfire:phoneNumber",
+      "@type": "xsd:string"
+    },
+    "transferDigit": {
+      "@id": "callfire:transferDigit",
+      "@type": "xsd:string"
+    },
+    "transferMessage": {
+      "@id": "callfire:transferMessage",
+      "@type": "xsd:string"
+    },
+    "transferMessageSoundId": {
+      "@id": "callfire:transferMessageSoundId",
+      "@type": "xsd:integer"
+    },
+    "transferNumber": {
+      "@id": "callfire:transferNumber",
+      "@type": "xsd:string"
+    },
+    "voice": {
+      "@id": "callfire:voice",
+      "@type": "xsd:string"
+    },
+    "PostCallsResponse": "callfire:PostCallsResponse",
+    "GetCallsBroadcastsResponse": "callfire:GetCallsBroadcastsResponse",
+    "GetV2CallsBroadcastsResponse": "callfire:GetV2CallsBroadcastsResponse",
+    "PostV2CallsBroadcastsResponse": "callfire:PostV2CallsBroadcastsResponse",
+    "id": {
+      "@id": "callfire:id",
+      "@type": "xsd:integer"
+    },
+    "PostV2CallsBroadcastsBroadcastidIdResponse": "callfire:PostV2CallsBroadcastsBroadcastidIdResponse",
+    "GetV2CallsBroadcastsIdRecipientsResponse": "callfire:GetV2CallsBroadcastsIdRecipientsResponse",
+    "PostV2ContactsListsResponse": "callfire:PostV2ContactsListsResponse",
+    "PostV2ContactsListsUploadResponse": "callfire:PostV2ContactsListsUploadResponse",
+    "GetV2V2IdResponse": "callfire:GetV2V2IdResponse",
+    "toNumber": {
+      "@id": "callfire:toNumber",
+      "@type": "xsd:string"
+    },
+    "state": {
+      "@id": "callfire:state",
+      "@type": "xsd:string"
+    },
+    "campaignId": {
+      "@id": "callfire:campaignId",
+      "@type": "xsd:integer"
+    },
+    "batchId": {
+      "@id": "callfire:batchId",
+      "@type": "xsd:integer"
+    },
+    "contact": {
+      "@id": "callfire:contact"
+    },
+    "labels": {
+      "@id": "callfire:labels",
+      "@container": "@list"
+    },
+    "inbound": {
+      "@id": "callfire:inbound",
+      "@type": "xsd:boolean"
+    },
+    "created": {
+      "@id": "callfire:created",
+      "@type": "xsd:integer"
+    },
+    "modified": {
+      "@id": "callfire:modified",
+      "@type": "xsd:integer"
+    },
+    "finalCallResult": {
+      "@id": "callfire:finalCallResult",
+      "@type": "xsd:string"
+    },
+    "records": {
+      "@id": "callfire:records",
+      "@container": "@list"
+    },
+    "agentCall": {
+      "@id": "callfire:agentCall",
+      "@type": "xsd:boolean"
+    },
+    "PostV2V2IdResponse": "callfire:PostV2V2IdResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Callfire API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Callfire's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-06) from openapi/_ae-authored/callfire-openapi-generated.yml.",
+  "dcterms:created": "2026-10-06",
+  "dcterms:source": [
+    "openapi/_ae-authored/callfire-openapi-generated.yml"
+  ]
+}

@@ -1,44 +1,38 @@
 aid: callfire
-
 name: Callfire
-
 image: https://www.callfire.com/sites/default/files/OpenGraph/callfire-social-post.png
-
 description: Callfire provides cloud-based communication solutions that enable businesses to engage customers via voice calls, text messaging,
   and IVR. Their platform offers tools for call tracking, voice broadcasting, and automated messaging, helping companies improve outreach, increase
   revenue, and streamline customer interactions. With over 4 billion messages delivered, Callfire serves a wide range of industries and integrates
   with popular CRMs and marketing platforms.
-
 url: https://raw.githubusercontent.com/api-evangelist/callfire/refs/heads/main/apis.yml
-
 x-type: company
-
 x-source: harvest:secondary-market
-
-x-tier: stub
-
-x-tier-reason: harvest
-
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-06 (modular-v1; was harvest)
 specificationVersion: '0.20'
-
 created: '2026-10-06'
-
 modified: '2026-10-06'
-
 tags:
 - Company
 - Communications
 - Cloud
 - Messaging
 - Voice
-
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-
 common:
+- type: Spectral
+  url: rules/callfire-rules.yml
+- type: JSONLD
+  url: json-ld/callfire-context.jsonld
+- type: Vocabulary
+  url: vocabulary/callfire-vocabulary.yml
+- type: DataModel
+  url: data-model/callfire-data-model.yml
 - type: Plans
   url: plans/callfire-plans-pricing.yml
 - type: Webhooks
@@ -84,20 +78,40 @@ common:
 - type: SignUp
   url: https://www.callfire.com/ui/register
 - type: TermsOfService
-  url: https://www.eztexting.com/terms
+  url: https://www.callfire.com/terms
 - type: PrivacyPolicy
-  url: https://www.eztexting.com/privacy-policy
+  url: https://www.callfire.com/privacy-policy
 - type: Compliance
   url: https://www.callfire.com/legal/compliance
-
 apis:
 - name: CallFire API
   description: CallFire API provides voice calls, SMS, and related communication services.
   humanURL: https://developers.callfire.com/docs.html
   baseURL: https://api.callfire.com/v2
-  properties:
   aid: callfire:callfire-api
+- aid: callfire:callfire-api
+  name: Callfire API
+  description: 'Callfire API as documented publicly: 33 operations. Contract generated from the documentation by API Evangelist (2026-10-06);
 
+    not the provider''s own document.'
+  humanURL: https://developers.callfire.com/webhooks-guide.html
+  baseURL: https://api.callfire.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/callfire-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec
@@ -110,3 +124,9 @@ x-coverage:
     status: 200
   - url: https://equityzen.com/company/callfire
     status: 403
+x-enrichment:
+  date: '2026-10-06'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

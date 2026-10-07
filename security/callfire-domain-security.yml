@@ -8,6 +8,16 @@ hosts:
   cert_expires: Dec 24 23:59:59 2026 GMT
   hsts: true
   hsts_max_age: 63072000
+- host: developers.callfire.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan  1 23:42:39 2027 GMT
+  hsts: false
+- host: api.callfire.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Dec 24 23:59:59 2026 GMT
+  hsts: null
 domains:
 - domain: callfire.com
   dnssec: false

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/callfire/main/json-schema/callfire-get-v2-v2-id-response-schema.json",
+  "title": "GetV2V2IdResponse",
+  "x-generated": "2026-10-06",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/callfire-openapi-generated.yml#/components/schemas/GetV2V2IdResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "fromNumber": {
+      "type": "string"
+    },
+    "toNumber": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "campaignId": {
+      "type": "integer"
+    },
+    "batchId": {
+      "type": "integer"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "homePhone": {
+          "type": "string"
+        }
+      }
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "external_user_id": {
+          "type": "string"
+        },
+        "external_route_id": {
+          "type": "string"
+        }
+      }
+    },
+    "inbound": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "integer"
+    },
+    "modified": {
+      "type": "integer"
+    },
+    "finalCallResult": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "billedAmount": {
+            "type": "number"
+          },
+          "finishTime": {
+            "type": "integer"
+          },
+          "callResult": {
+            "type": "string"
+          },
+          "questionResponses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string"
+                },
+                "response": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "agentCall": {
+      "type": "boolean"
+    }
+  }
+}

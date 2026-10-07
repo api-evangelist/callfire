@@ -1,0 +1,20 @@
+generated: '2026-10-06'
+method: probed
+source: https://www.callfire.com/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.callfire.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "You may send a request specifying your communications preferences to support@CallFire.com."
+        section: "Communications Preferences"
+        note: Allows users to request changes to their communication settings, indicating a data subject request mechanism.
+  data_retention:
+    evidence:
+      - source: https://www.callfire.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "We do not access, retain, use, or disclose Customers’ Contact Data for any other purpose."
+        section: "California Consumer Privacy Act"
+        note: States that they do not retain customer contact data beyond service provision.

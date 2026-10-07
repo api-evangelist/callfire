@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/callfire/main/json-schema/callfire-get-v2-calls-broadcasts-response-schema.json",
+  "title": "GetV2CallsBroadcastsResponse",
+  "x-generated": "2026-10-06",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/callfire-openapi-generated.yml#/components/schemas/GetV2CallsBroadcastsResponse",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "lastModified": {
+            "type": "integer"
+          },
+          "fromNumber": {
+            "type": "string"
+          },
+          "localTimeRestriction": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              }
+            }
+          },
+          "retryConfig": {
+            "type": "object",
+            "properties": {
+              "maxAttempts": {
+                "type": "integer"
+              },
+              "minutesBetweenAttempts": {
+                "type": "integer"
+              },
+              "retryPhoneTypes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "resumeNextDay": {
+            "type": "boolean"
+          },
+          "answeringMachineConfig": {
+            "type": "string"
+          },
+          "sounds": {
+            "type": "object",
+            "properties": {
+              "liveSoundText": {
+                "type": "string"
+              },
+              "liveSoundId": {
+                "type": "integer"
+              },
+              "machineSoundText": {
+                "type": "string"
+              },
+              "machineSoundId": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "totalCount": {
+      "type": "integer"
+    }
+  }
+}

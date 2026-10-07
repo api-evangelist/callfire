@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/callfire/main/json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json",
+  "title": "GetV2CallsBroadcastsIdRecipientsResponse",
+  "x-generated": "2026-10-06",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/callfire-openapi-generated.yml#/components/schemas/GetV2CallsBroadcastsIdRecipientsResponse",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "fromNumber": {
+            "type": "string"
+          },
+          "toNumber": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "campaignId": {
+            "type": "integer"
+          },
+          "batchId": {
+            "type": "integer"
+          },
+          "contact": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "homePhone": {
+                "type": "string"
+              }
+            }
+          },
+          "inbound": {
+            "type": "boolean"
+          },
+          "created": {
+            "type": "integer"
+          },
+          "modified": {
+            "type": "integer"
+          },
+          "agentCall": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

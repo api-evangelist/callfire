@@ -1,17 +1,35 @@
 generated: '2026-10-06'
 method: searched
 generator: extract-docs-artifacts.py (local)
-source: https://developers.eztexting.com/reference/list_8-1.md
+source: https://developers.callfire.com/webhooks-guide.html
 sources:
-- https://developers.eztexting.com/reference/list_8-1.md
-- https://developers.eztexting.com/reference/create_6-1.md
-- https://developers.eztexting.com/reference/get_6-1.md
-- https://developers.eztexting.com/reference/delete_6-1.md
-description: EzTexting provides webhook subscriptions for specific event types.
+- https://developers.callfire.com/webhooks-guide.html
+- https://developers.callfire.com/webhook-outbound-text-delivery-report.html
+- https://www.callfire.com/help/docs/getting-started/configuring-settings/email-notification-settings
+description: 'CallFire webhooks support the following events:'
 events:
-- event: inbound_text.received
-- event: keyword.opt_in
-- event: contact.created
+- event: OutboundCall.finished
+  description: Outbound call has finished.
+- event: InboundCall.finished
+  description: Inbound call has finished.
+- event: OutboundText.finished
+  description: Outbound text message has finished.
+- event: InboundText.finished
+  description: Inbound text message has finished.
+- event: CallBroadcast.started
+  description: Call broadcast has started.
+- event: TextBroadcast.started
+  description: Text broadcast has started.
+- event: ContactList.validationFinished
+  description: Contact list validation has finished successfully.
+- event: OutboundTextDeliveryReport.Received
+  description: Outbound text delivery report received.
+- event: MonthlyRenewal.failed
+  description: Monthly renewal has failed.
+- event: LowBalance.failed
+  description: Low balance alert has failed.
 delivery:
-  auth: Shared secret for authenticating requests, see guide on webhooks for details
-docs: https://developers.eztexting.com/reference/list_8-1.md
+  content_type: application/json
+note: The documentation does not specify a signature header, authentication method for webhook delivery, or retry behavior. 7 extracted row(s)
+  were dropped because their quote was not on the page.
+docs: https://developers.callfire.com/webhooks-guide.html

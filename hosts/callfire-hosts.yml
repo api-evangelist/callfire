@@ -5,19 +5,22 @@ generator: derive-hosts.py
 summary:
   hosts: 7
   own: 4
-  other_domain: 3
-  platform: 0
+  other_domain: 2
+  platform: 1
   roles:
   - api
-  - legal
+  - other
   - portal
+  - source
   - status
   - website
 hosts:
 - host: api.callfire.com
   found_by:
   - apis[]
+  - probed
   - contract-discovery
+  - well-known
   types: []
   serves:
   - api
@@ -41,6 +44,7 @@ hosts:
   - docs-index
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
   - DeveloperPortal
   - Documentation
@@ -48,30 +52,29 @@ hosts:
   - GettingStarted
   serves:
   - docs
+  - documentation
+  vendor: swagger-ui
   registrable_domain: callfire.com
   role: portal
   relation: own
-- host: developers.eztexting.com
+- host: github.com
   found_by:
-  - probed
-  - site-links
-  - namespace-probe
-  - docs-index
-  - well-known
-  types: []
-  serves:
-  - docs
-  title: Getting Started
-  status: 200
-  registrable_domain: eztexting.com
-  role: portal
-  relation: other-domain
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
 - host: status.callfire.com
   found_by:
+  - pointer
   - probed
   - site-links
+  - contract-discovery
   - well-known
-  types: []
+  types:
+  - StatusPage
   serves: []
   registrable_domain: callfire.com
   role: status
@@ -84,29 +87,31 @@ hosts:
   - spec-found
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
+  - Newsroom
   - Website
   - Support
   - Blog
   - Pricing
   - SignUp
+  - TermsOfService
+  - PrivacyPolicy
   - Compliance
   serves:
   - docs
   - spec
+  - cdn
+  vendor: fastly
   registrable_domain: callfire.com
   role: website
   relation: own
 - host: www.eztexting.com
   found_by:
-  - pointer
   - probed
-  - contract-discovery
   - well-known
-  types:
-  - TermsOfService
-  - PrivacyPolicy
+  types: []
   serves: []
   registrable_domain: eztexting.com
-  role: legal
+  role: other
   relation: other-domain
