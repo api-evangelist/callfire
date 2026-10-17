@@ -1,0 +1,239 @@
+openapi: 3.2.0
+info:
+  title: Callfire API
+  version: '2026-10-06'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-06: 33 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Callfire has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 25
+    documentation: 8
+    pages-with-code: 6
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-06'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developers.callfire.com/webhooks-guide.html
+  - https://developers.callfire.com/docs.html
+  - https://developers.callfire.com/contacts-guide.html
+  - https://developers.callfire.com/security-guide.html
+  - https://developers.callfire.com/legacy-migration.html
+  - https://developers.callfire.com/usecase-sms-chat.html
+  - https://developers.callfire.com/quick-start-guide.html
+servers:
+- url: https://api.callfire.com
+tags:
+- name: Callfire API
+paths:
+  /v2:
+    get:
+      operationId: get_v2
+      tags:
+      - Callfire API
+      summary: GET /v2
+      x-source: https://developers.callfire.com/docs.html
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl \n C#.NET \n Java \n JS \n Python \n PHP \n Go -->\n API Reference \n The CallFire Developers API V2 is built from the ground up as a REST API. Easy to understand resource URLs, more features and functionality, and adherence to industry practices makes the CallFire API V2 better. Using many HTTP standards and features, the API can be consumed by any HTTP client, and no 3rd party SDKs are required. JS"
+  /v2/{v2id}:
+    get:
+      operationId: get_v2_v2id
+      tags:
+      - Callfire API
+      summary: GET /v2/calls
+      x-source: https://developers.callfire.com/docs.html
+      parameters:
+      - name: v2id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: batchId
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: campaignId
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: fromNumber
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: id
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: label
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: toNumber
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV2V2IdResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl -u username:password -H "Content-Type:application/json" -X GET " https://api.callfire.com/v2/calls?id=11646003&id=12646003&id=13776003&campaignId=449060003&batchId=447060003&fromNumber=12135551126&toNumber=12136666123&label=my label&states=READY,FINISHED,INVALID&results=LA&inboubd=true&intervalBegin=1473781817000&intervalEnd=1473781817000&offset=0&limit=10&fields=items(id,fromNumber,toNumber,
+        collapsed_from: 3 example path(s) differing only at v2Id
+    post:
+      operationId: post_v2_v2id
+      tags:
+      - Callfire API
+      summary: POST /v2/calls
+      x-source: https://developers.callfire.com/docs.html
+      parameters:
+      - name: v2id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: campaignId
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: defaultVoice
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: fields
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV2V2IdResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u username:password -H \"Content-Type:application/json\" -X POST -d '\n [\n {\n \"phoneNumber\": \"12135551100\",\n \"liveMessage\": \"Hello, Alice, this is message for live answer\",\n \"machineMessage\": \"Hello, Alice, this is message for answering machine\"\n },\n {\n \"phoneNumber\": \"12135551101\",\n \"liveMessage\": \"Hello, Bob, this is message for live answer\",\n \"machineMessage\": \"Hello, Bob, this is message fo"
+        collapsed_from: 4 example path(s) differing only at v2Id
+components:
+  schemas:
+    GetV2V2IdResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        fromNumber:
+          type: string
+        toNumber:
+          type: string
+        state:
+          type: string
+        campaignId:
+          type: integer
+        batchId:
+          type: integer
+        contact:
+          type: object
+          properties:
+            id:
+              type: integer
+            homePhone:
+              type: string
+        labels:
+          type: array
+          items:
+            type: string
+        attributes:
+          type: object
+          properties:
+            external_user_id:
+              type: string
+            external_route_id:
+              type: string
+        inbound:
+          type: boolean
+        created:
+          type: integer
+        modified:
+          type: integer
+        finalCallResult:
+          type: string
+        records:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              billedAmount:
+                type: number
+              finishTime:
+                type: integer
+              callResult:
+                type: string
+              questionResponses:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    question:
+                      type: string
+                    response:
+                      type: string
+        agentCall:
+          type: boolean
+    PostV2V2IdResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              fromNumber:
+                type: string
+              toNumber:
+                type: string
+              state:
+                type: string
+              campaignId:
+                type: integer
+              batchId:
+                type: integer
+              contact:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  homePhone:
+                    type: string
+              inbound:
+                type: boolean
+              created:
+                type: integer
+              modified:
+                type: integer
+              agentCall:
+                type: boolean

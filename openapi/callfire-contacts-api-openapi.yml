@@ -1,0 +1,97 @@
+openapi: 3.2.0
+info:
+  title: Callfire Contacts API
+  version: '2026-10-06'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-06: 33 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Callfire has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 25
+    documentation: 8
+    pages-with-code: 6
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-06'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developers.callfire.com/webhooks-guide.html
+  - https://developers.callfire.com/docs.html
+  - https://developers.callfire.com/contacts-guide.html
+  - https://developers.callfire.com/security-guide.html
+  - https://developers.callfire.com/legacy-migration.html
+  - https://developers.callfire.com/usecase-sms-chat.html
+  - https://developers.callfire.com/quick-start-guide.html
+servers:
+- url: https://api.callfire.com
+tags:
+- name: Contacts
+paths:
+  /v2/contacts/lists:
+    post:
+      operationId: post_v2_contacts_lists
+      tags:
+      - Contacts
+      summary: POST /v2/contacts/lists
+      x-source: https://developers.callfire.com/contacts-guide.html
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV2ContactsListsResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u username:password -H \"Content-Type:application/json\" -X POST -d '\n {\n \"name\":\"My Contact List\",\n \"contacts\":\n [\n {\n \"firstName\": \"Alice\",\n \"lastName\": \"Moore\",\n \"homePhone\": \"12135551126\"\n },\n {\n \"firstName\": \"Bob\",\n \"lastName\": \"Smith\",\n \"homePhone\": \"12135551127\",\n \"properties\": {\n \"age\": 30\n }\n }\n ]\n }' \"https://api.callfire.com/v2/contacts/lists\""
+  /v2/contacts/lists/upload:
+    post:
+      operationId: post_v2_contacts_lists_upload
+      tags:
+      - Contacts
+      summary: POST /v2/contacts/lists/upload
+      x-source: https://developers.callfire.com/contacts-guide.html
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV2ContactsListsUploadResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u username:password -X POST -F \"name=My Contact List\" -F \"file=@contacts.csv\" -F \"useCustomFields=true\" \"https://api.callfire.com/v2/contacts/lists/upload\" \n response: \n {\n \" id \": 4 \n } \n[-curl]\n[+java]\n import com.callfire.api.client.CallfireClient;\n import com.callfire.api.client.api.common.model.ResourceId;\n import java.io.File;\n class ApiClientSample {\n public static void main(String[] "
+  /v2/contacts/lists/{listid}/items:
+    post:
+      operationId: post_v2_contacts_lists_listid_items
+      tags:
+      - Contacts
+      summary: POST /v2/contacts/lists/{listId}/items
+      x-source: https://developers.callfire.com/contacts-guide.html
+      parameters:
+      - name: listid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u username:password -H \"Content-Type:application/json\" -X POST -d '\n {\n \"contacts\":\n [\n {\n \"firstName\":\"Alice\",\n \"lastName\":\"Moore\",\n \"homePhone\":\"12135551126\"\n },\n {\n \"firstName\":\"Bob\",\n \"lastName\":\"Smith\",\n \"homePhone\":\"12135551127\",\n \"properties\":\n {\n \"age\":30\n }\n }\n ]\n }' \"https://api.callfire.com/v2/contacts/lists/45006708003/items\""
+components:
+  schemas:
+    PostV2ContactsListsUploadResponse:
+      type: object
+      properties:
+        ' id ':
+          type: integer
+    PostV2ContactsListsResponse:
+      type: object
+      properties:
+        ' id ':
+          type: integer

@@ -1,0 +1,69 @@
+openapi: 3.2.0
+info:
+  title: Callfire Me API
+  version: '2026-10-06'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-06: 33 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Callfire has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 25
+    documentation: 8
+    pages-with-code: 6
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-06'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developers.callfire.com/webhooks-guide.html
+  - https://developers.callfire.com/docs.html
+  - https://developers.callfire.com/contacts-guide.html
+  - https://developers.callfire.com/security-guide.html
+  - https://developers.callfire.com/legacy-migration.html
+  - https://developers.callfire.com/usecase-sms-chat.html
+  - https://developers.callfire.com/quick-start-guide.html
+servers:
+- url: https://api.callfire.com
+tags:
+- name: Me
+paths:
+  /v2/me/callerids/{calleridid}:
+    post:
+      operationId: post_v2_me_callerids_calleridid
+      tags:
+      - Me
+      summary: POST /v2/me/callerids/{calleridId}
+      x-source: https://developers.callfire.com/quick-start-guide.html
+      parameters:
+      - name: calleridid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u \"username:password\" -H \"Content-Type:application/json\" -X POST \"https://api.callfire.com/v2/me/callerids/12135551175\"\n send a POST request to /me/callerids/{callerid}/verification-code with the verification code in payload\nas shown in the example below. The API operation returns 'true' if the code is accepted, or 'false' if the code is wrong. "
+  /v2/me/callerids/{calleridid}/verification-code:
+    post:
+      operationId: post_v2_me_callerids_calleridid_verification_code
+      tags:
+      - Me
+      summary: POST /v2/me/callerids/{calleridId}/verification-code
+      x-source: https://developers.callfire.com/quick-start-guide.html
+      parameters:
+      - name: calleridid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u \"username:password\" -H \"Content-Type:application/json\" -X POST -d '\n {\n \"verificationCode\":\"1234\"\n }' \"https://api.callfire.com/v2/me/callerids/12135551175/verification-code\"\n You may use several Caller IDs within one account."

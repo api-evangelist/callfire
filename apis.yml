@@ -89,17 +89,258 @@ apis:
   humanURL: https://developers.callfire.com/docs.html
   baseURL: https://api.callfire.com/v2
   aid: callfire:callfire-api
-- aid: callfire:callfire-api
-  name: Callfire API
-  description: 'Callfire API as documented publicly: 33 operations. Contract generated from the documentation by API Evangelist (2026-10-06);
-
-    not the provider''s own document.'
-  humanURL: https://developers.callfire.com/webhooks-guide.html
-  baseURL: https://api.callfire.com
+- aid: callfire:callfire-callfire-api-api
+  name: Callfire Callfire API
+  description: The Callfire API API from Callfire — 2 operation(s) for callfire api.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Callfire API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/callfire-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/callfire-callfire-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-callfirexml-api
+  name: Callfire Callfirexml API
+  description: The Callfirexml API from Callfire — 2 operation(s) for callfirexml.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Callfirexml
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-callfirexml-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-calls-api
+  name: Callfire Calls API
+  description: The Calls API from Callfire — 6 operation(s) for calls.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Calls
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-calls-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-campaign-api
+  name: Callfire Campaign API
+  description: The Campaign API from Callfire — 1 operation(s) for campaign.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Campaign
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-campaign-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-contacts-api
+  name: Callfire Contacts API
+  description: The Contacts API from Callfire — 3 operation(s) for contacts.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Contacts
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-contacts-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-files-api
+  name: Callfire Files API
+  description: The Files API from Callfire — 4 operation(s) for files.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Files
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-files-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-inbound-api
+  name: Callfire Inbound API
+  description: The Inbound API from Callfire — 1 operation(s) for inbound.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Inbound
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-inbound-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-me-api
+  name: Callfire Me API
+  description: The Me API from Callfire — 2 operation(s) for me.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Me
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-me-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-reports-api
+  name: Callfire Reports API
+  description: The Reports API from Callfire — 5 operation(s) for reports.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Reports
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-reports-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-service-api
+  name: Callfire Service API
+  description: The Service API from Callfire — 1 operation(s) for service.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Service
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-service-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-sms-api
+  name: Callfire Sms API
+  description: The Sms API from Callfire — 1 operation(s) for sms.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Sms
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-sms-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/callfire-post-calls-request-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-v2-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-get-v2-calls-broadcasts-id-recipients-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-calls-broadcasts-broadcastid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/callfire-post-v2-v2-id-response-schema.json
+- aid: callfire:callfire-utils-api
+  name: Callfire Utils API
+  description: The Utils API from Callfire — 1 operation(s) for utils.
+  humanURL: https://developers.callfire.com/docs.html
+  baseURL: https://api.callfire.com/v2
+  tags:
+  - Utils
+  properties:
+  - type: OpenAPI
+    url: openapi/callfire-utils-api-openapi.yml
   - type: JSONSchema
     url: json-schema/callfire-post-calls-request-schema.json
   - type: JSONSchema

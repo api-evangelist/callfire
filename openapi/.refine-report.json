@@ -1,0 +1,33 @@
+{
+  "provider": "callfire",
+  "sources": [
+    "_ae-authored/callfire-openapi-generated.yml"
+  ],
+  "outputs": [
+    "callfire-callfire-api-api-openapi.yml",
+    "callfire-callfirexml-api-openapi.yml",
+    "callfire-calls-api-openapi.yml",
+    "callfire-campaign-api-openapi.yml",
+    "callfire-contacts-api-openapi.yml",
+    "callfire-files-api-openapi.yml",
+    "callfire-inbound-api-openapi.yml",
+    "callfire-me-api-openapi.yml",
+    "callfire-reports-api-openapi.yml",
+    "callfire-service-api-openapi.yml",
+    "callfire-sms-api-openapi.yml",
+    "callfire-utils-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "callfire-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "callfire-openapi-generated.yml: tagged paths GET /v2 -> Callfire API",
+    "callfire-openapi-generated.yml: tagged paths GET /v2/{v2id} -> Callfire API",
+    "callfire-openapi-generated.yml: tagged paths POST /v2/{v2id} -> Callfire API",
+    "callfire-openapi-generated.yml: declared missing tag: Callfire API",
+    "apis.yml register: written (+12 apis, 13 total)"
+  ],
+  "skipped": []
+}

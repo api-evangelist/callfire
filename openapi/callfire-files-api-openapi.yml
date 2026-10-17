@@ -1,0 +1,146 @@
+openapi: 3.2.0
+info:
+  title: Callfire Files API
+  version: '2026-10-06'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-06: 33 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Callfire has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 25
+    documentation: 8
+    pages-with-code: 6
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-06'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developers.callfire.com/webhooks-guide.html
+  - https://developers.callfire.com/docs.html
+  - https://developers.callfire.com/contacts-guide.html
+  - https://developers.callfire.com/security-guide.html
+  - https://developers.callfire.com/legacy-migration.html
+  - https://developers.callfire.com/usecase-sms-chat.html
+  - https://developers.callfire.com/quick-start-guide.html
+servers:
+- url: https://api.callfire.com
+tags:
+- name: Files
+paths:
+  /files/recording/dynamic/{hash}/{year}/{month}/{campaign}/{filename}:
+    get:
+      operationId: get_files_recording_dynamic_hash_year_month_campaign_filename
+      tags:
+      - Files
+      summary: GET /files/recording/dynamic/{hash}/{year}/{month}/{campaign}/{filename}
+      x-source: https://developers.callfire.com/legacy-migration.html
+      parameters:
+      - name: hash
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: year
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: month
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: campaign
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: filename
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /files/recording/dynamic/{hash}/{year}/{month}/{campaign}/{filename}/mp3:
+    get:
+      operationId: get_files_recording_dynamic_hash_year_month_campaign_filename_mp3
+      tags:
+      - Files
+      summary: GET /files/recording/dynamic/{hash}/{year}/{month}/{campaign}/{filename}/mp3
+      x-source: https://developers.callfire.com/legacy-migration.html
+      parameters:
+      - name: hash
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: year
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: month
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: campaign
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: filename
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /files/recording/list/{campid}/{callid}:
+    get:
+      operationId: get_files_recording_list_campid_callid
+      tags:
+      - Files
+      summary: GET /files/recording/list/{campid}/{callid}
+      x-source: https://developers.callfire.com/legacy-migration.html
+      parameters:
+      - name: campid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: callid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /files/recording/{fileid}:
+    get:
+      operationId: get_files_recording_fileid
+      tags:
+      - Files
+      summary: GET /files/recording/{fileid}
+      x-source: https://developers.callfire.com/legacy-migration.html
+      parameters:
+      - name: fileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
