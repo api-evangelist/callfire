@@ -44,3 +44,41 @@ plans:
     currency: USD
     billing_period: per-call
     limits: []
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: Pro
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Grow
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Startup
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Lite
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pay as you go
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
