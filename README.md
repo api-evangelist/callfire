@@ -64,5 +64,144 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Callfire is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/callfire
+Callfire provides cloud-based communication solutions that enable businesses to engage customers via voice calls, text messaging, and IVR. Their platform offers tools for call tracking, voice broadcasting, and automated messaging, helping companies improve outreach, increase revenue, and streamline customer interactions. With over 4 billion messages delivered, Callfire serves a wide range of industries and integrates with popular CRMs and marketing platforms.
+
+**Areas:** Company · Communications · Cloud · Messaging · Voice
+
+## Callfire on APIs.io
+
+Everything profiled for Callfire is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/callfire/](https://apis.io/providers/callfire/)** — or go straight to one of the APIs or properties below.
+
+### APIs (13)
+
+- [CallFire API](https://apis.io/apis/callfire/callfire-api/) — CallFire API provides voice calls, SMS, and related communication services.
+- [Callfire Callfire API](https://apis.io/apis/callfire/callfire-callfire-api-api/) — The Callfire API API from Callfire — 2 operation(s) for callfire api.
+- [Callfire Callfirexml API](https://apis.io/apis/callfire/callfire-callfirexml-api/) — The Callfirexml API from Callfire — 2 operation(s) for callfirexml.
+- [Callfire Calls API](https://apis.io/apis/callfire/callfire-calls-api/) — The Calls API from Callfire — 6 operation(s) for calls.
+- [Callfire Campaign API](https://apis.io/apis/callfire/callfire-campaign-api/) — The Campaign API from Callfire — 1 operation(s) for campaign.
+- [Callfire Contacts API](https://apis.io/apis/callfire/callfire-contacts-api/) — The Contacts API from Callfire — 3 operation(s) for contacts.
+- [Callfire Files API](https://apis.io/apis/callfire/callfire-files-api/) — The Files API from Callfire — 4 operation(s) for files.
+- [Callfire Inbound API](https://apis.io/apis/callfire/callfire-inbound-api/) — The Inbound API from Callfire — 1 operation(s) for inbound.
+- [Callfire Me API](https://apis.io/apis/callfire/callfire-me-api/) — The Me API from Callfire — 2 operation(s) for me.
+- [Callfire Reports API](https://apis.io/apis/callfire/callfire-reports-api/) — The Reports API from Callfire — 5 operation(s) for reports.
+- [Callfire Service API](https://apis.io/apis/callfire/callfire-service-api/) — The Service API from Callfire — 1 operation(s) for service.
+- [Callfire Sms API](https://apis.io/apis/callfire/callfire-sms-api/) — The Sms API from Callfire — 1 operation(s) for sms.
+- [Callfire Utils API](https://apis.io/apis/callfire/callfire-utils-api/) — The Utils API from Callfire — 1 operation(s) for utils.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Callfire Webhooks](https://apis.io/asyncapis/callfire/callfire-webhooks/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [GetV2CallsBroadcastsIdRecipientsResponse](https://apis.io/schemas/callfire/callfire-get-v2-calls-broadcasts-id-recipients-response/)
+- [GetV2CallsBroadcastsResponse](https://apis.io/schemas/callfire/callfire-get-v2-calls-broadcasts-response/)
+- [GetV2V2IdResponse](https://apis.io/schemas/callfire/callfire-get-v2-v2-id-response/)
+- [PostCallsRequest](https://apis.io/schemas/callfire/callfire-post-calls-request/)
+- [PostV2CallsBroadcastsBroadcastidIdResponse](https://apis.io/schemas/callfire/callfire-post-v2-calls-broadcasts-broadcastid-id-response/)
+- [PostV2V2IdResponse](https://apis.io/schemas/callfire/callfire-post-v2-v2-id-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Callfire Context](https://apis.io/jsonld/callfire/callfire-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Callfire API Rules](https://apis.io/rules/callfire/callfire-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Callfire Domain Security](https://apis.io/security/callfire/callfire-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Callfire Plans Pricing](https://apis.io/plans/callfire/callfire-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.callfire.com)
+- [Documentation](https://developers.callfire.com/docs.html)
+- [Getting started](https://developers.callfire.com/learn.html)
+- [API reference](https://developers.callfire.com/docs.html)
+- [Pricing](https://www.callfire.com/pricing)
+- [Sign up](https://www.callfire.com/ui/register)
+- [Support](https://www.callfire.com/help/docs/faq)
+- [Blog](https://www.callfire.com/blog)
+- [Compliance](https://www.callfire.com/legal/compliance)
+- [Terms of service](https://www.callfire.com/terms)
+- [Privacy policy](https://www.callfire.com/privacy-policy)
+- [GitHub](https://github.com/CallFire)
+- [Status](http://status.callfire.com)
+
+## API Evangelist rating
+
+**Kin Score 51.0** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 32.2 |
+| Contract governance | 22.0 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 84.2 |
+
+**Agent readiness 18.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | — |
+
+**Regulatory alignment 23.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/callfire/](https://apis.io/providers/callfire/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Callfire: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/callfire/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
